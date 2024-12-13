@@ -62,7 +62,7 @@ jobs:
         run: npm run build
 
       - name: Copy index.html to 404.html
-        run: cp ./dist/angular-github-actions/browser/index.html ./dist/browser/angular-github-actions/404.html
+        run: cp ./dist/angular-github-actions/browser/index.html ./dist/angular-github-actions/browser/404.html
 
       - name: Deploy to GitHub Pages
         id: deployment
