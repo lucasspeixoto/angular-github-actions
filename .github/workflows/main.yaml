@@ -60,7 +60,7 @@ jobs:
           path: '.'
 
       - name: 🏗️ Building
-        run: npm run build -- --base-href="/angular-github-actions/"
+        run: npm run build -- --base-href="./"
 
       - name: Copy index.html to 404.html
         run: cp ./dist/angular-github-actions/browser/index.html ./dist/angular-github-actions/browser/404.html
