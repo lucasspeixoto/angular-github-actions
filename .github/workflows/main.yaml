@@ -54,6 +54,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
@@ -62,6 +65,6 @@ jobs:
           folder: angular-github-actions/dist/browser
           branch: main  
           token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist/angular-github-actions
 
       
