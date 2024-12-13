@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  angular-github-actions-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: angular-github-actions:v1
+    container_name: angular-github-actions
+    restart: on-failure
+    ports:
+      - 8080:80
