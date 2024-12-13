@@ -44,7 +44,7 @@ jobs:
         run: npm run test
 
       - name: 🏗️ Building
-        run: npm run build -- --base-href="/angular-github-actions/"
+        run: npm run build"
   CD:
     name: Continuous Deploy
     runs-on: ubuntu-latest
