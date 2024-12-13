@@ -63,6 +63,6 @@ jobs:
         with:
           folder: angular-github-actions/dist/browser
           branch: main  
-          token: ${{ secrets.GH_TOKEND }}
+          token: ${{ secrets.GH_TOKEN }}
 
       
