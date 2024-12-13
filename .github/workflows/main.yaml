@@ -59,7 +59,6 @@ jobs:
           path: '.'
 
       - name: Build Angular app to prod
-        working-directory: angular-github-actions
         run: npm run deploy
 
       - name: Deploy to GitHub Pages
