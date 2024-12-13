@@ -44,7 +44,7 @@ jobs:
         run: npm run test
 
       - name: 🏗️ Building
-        run: npm run deploy
+        run: npm run build -- --base-href="/angular-github-actions/"
   CD:
     name: Continuous Deploy
     runs-on: ubuntu-latest
@@ -57,6 +57,9 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+
+      - name: Copy index.html to 404.html
+        run: cp ./dist/angular-github-actions/index.html ./dist/angular-github-actions/404.html
 
       - name: Deploy to GitHub Pages
         id: deployment
