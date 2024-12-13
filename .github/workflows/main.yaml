@@ -36,10 +36,10 @@ jobs:
     needs: CI
     steps:
       - name: Deploy to gh pages
-      run: |
-        npx angular-cli-ghpages --dir=dist/angular-github-actions
-      env:
-        CI: true
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          npx angular-cli-ghpages --dir=dist/angular-github-actions
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       
