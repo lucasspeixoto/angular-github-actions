@@ -62,7 +62,7 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           folder: angular-github-actions/dist/browser
-          branch: prod  
+          branch: main  
           token: ${{ secrets.GH_TOKEN }}
 
       
