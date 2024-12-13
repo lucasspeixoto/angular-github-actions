@@ -44,7 +44,7 @@ jobs:
         run: npm run test
 
       - name: 🏗️ Building
-        run: npm run build"
+        run: npm run build
   CD:
     name: Continuous Deploy
     runs-on: ubuntu-latest
